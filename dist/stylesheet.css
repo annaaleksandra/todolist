@@ -1,0 +1,21 @@
+li {
+    list-style: none;
+}
+
+.task {
+    border: 3px solid black;
+    margin: 15px;
+    padding: 15px;
+}
+
+.important {
+    background-color: red;
+}
+
+.somewhat {
+    background-color: yellow;
+}
+
+.notimportant {
+    background-color: green;
+}
