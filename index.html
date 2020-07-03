@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="navigation">
+            <h1 id="title">To Do List</h1>
+            <button id="addNew">Add a New Task</button>
+        </div>
+        <div id="newTask" class="hidden">
+            <div id="box">
+                <h2>New Task</h2>
+                <form>
+                    <label for="taskName"> Task Name</label><br>
+                    <input type="text" id="taskName" name="taskName" placeholder="Make a todo list"><br>
+                    <!--p>How important is the task?</p>
+                    <input type="radio" id="important" name="importance" value="important" checked>
+                    <label for="important">Important</label>
+                    <input type="radio" id="somewhat" name="importance" value="somewhat">
+                    <label for="somewhat"> Somewhat important</label>
+                    <input type="radio" id="notimportant" name="importance" value="notimportant">
+                    <label for="notimportant">Not important</label><br><br-->
+
+                    <label for="description"> Description </label><br>
+                    <textarea id="description" name="description" rows="4" cols="40">Write about your task here</textarea>
+                    <br>
+                    <label for="dueDate"> Due date: </label><br>
+                    <input type="date" id="dueDate" name="calendar" value="11-11-2011">
+                    <!--div id="checklist">
+                        <p>Checklist</p>
+                        <input type="text" id="newItem" name="nn" placeholder="wash dishes">
+                        <button type="button" id="addcheckbox">Add</button>
+                    </div-->
+
+                </form>
+                <button type="submit" id="save">save</button>
+            </div>
+        </div>
+        <div class="container">
+            <ul id="list">
+                <li id="default"></li>
+            </ul>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
